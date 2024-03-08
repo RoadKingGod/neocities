@@ -1,0 +1,40 @@
+/* This file refers to the new site updates page */
+body {
+    font-family: Arial, sans-serif;
+      text-align: center;
+    background-image: url('mlem2.jpg'); /* Use a relative image path */
+   /*  background-repeat: repeat-x; */
+    background-size: 220px 220px
+}
+
+h1 {
+    color: #FFF;
+}
+
+p  {
+  font-size: 20px; 
+}
+
+a  {
+  padding: 10px;
+  font-size: 15px;
+}
+
+.image-container {
+    display: flex; /* OG Color: #40E0D0 */
+    flex-wrap: wrap;
+    justify-content: center;
+  /*  border: 10px solid #40E0D0; */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.);
+    border-radius: 5px;
+}
+
+.footer-text {
+    font-size: 15px; /* Adjust the size as needed */
+    margin-bottom: -12px;
+}
+
+.links {
+    font-size: 15px; /* Adjust the size as needed */
+    margin-bottom: -12px;
+}
