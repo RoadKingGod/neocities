@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Cat Meme Gallery</title>
+</head>
+<body>
+   <!-- <button id="downloadButton">Download All Images</button> -->
+    <h1>Cat Meme Gallery</h1>
+<div class="image-container" id="imageContainer" style="display: flex; flex-direction: column; align-items: center">
+<a href="https://www.youtube.com/channel/UCHeT29gZ-AOgl5aROeO0wbQ">Check out my yt channel!</a>
+<p>Feel free to talk to me on discord at RoadKingGod#7365 :D<p>
+<a href="updates.html">Site updates</a>
+<a href="games.html">Games</a>
+<a href="credits.html">Credits</a>
+<a href="videos.html">Videos</a>
+        <!-- Images will be added here dynamically with JavaScript -->
+    </div>
+    <footer>
+       <p class="footer-text">This site was created on November 2nd, 2023</p>
+ <p class="footer-text">This site was last modified on: 2023.11.09 at 20:59, or 8:59 PM</p>
+       <p class="footer-text">There are currently 24 cat memes on the site</p>
+    </footer>
+    <script>
+        window.addEventListener("load", function () {
+            const imageContainer = document.getElementById("imageContainer");
+
+            // Create an array of image data including URLs and names
+            const imagesData = [
+                {
+                    src: "images/popcat.jpg",
+                    alt: "Cat Meme 1",
+                    name: "Popcat",
+                },
+                {
+                    src: "images/overattchcat.webp",
+                    alt: "Cat Meme 2",
+                    name: "Overly Attached Cat",
+                },
+                {
+                    src: "images/cryingcat.webp",
+                    alt: "Cat Meme 3",
+                    name: "Crying Cat",
+                },
+                {
+                    src: "images/politecat.webp",
+                    alt: "Cat Meme 4",
+                    name: "Polite Cat",
+                },
+                {
+                    src: "images/grumpycat.jpg",
+                    alt: "Cat Meme 5",
+                    name: "Tartar Sauce, AKA, Grumpy Cat",
+                },
+                {
+                    src: "images/notrustcat.webp",
+                    alt: "Cat Meme 6",
+                    name: "No trust cat",
+                },
+                {
+                    src: "images/inbreadcat.jpg",
+                    alt: "Cat Meme 7",
+                    name: "In bred sounds like in bread, get it?",
+                },
+                {
+                    src: "images/weirdcat.jpg",
+                    alt: "Cat Meme 8",
+                    name: "Weird cat",
+                },
+                {
+                    src: "images/cantwalkstraight.webp",
+                    alt: "Cat Meme 9",
+                    name: "Cats just can't walk straight",
+                },
+                {
+                    src: "images/bamboozlecat.jpg",
+                    alt: "Cat Meme 10",
+                    name: "Bamboozled cat"
+                },
+                {
+                    src: "images/catlikeskeyboard.webp",
+                    alt: "Cat Meme 11",
+                    name: "It's true tho" 
+                },
+                {
+                    src: "images/catmemes.webp",
+                    alt: "Cat Meme 12",
+                    name: "Yeah, cat memes have gotten weird man..." 
+                },
+                {
+                    src: "images/cattrap.jpg",
+                    alt: "Cat Meme 13",
+                    name: "Boxes really do attract them"
+                },
+                {
+                    src: "images/cattree.jpg",
+                    alt: "Cat Meme 14",
+                    name: "Cat trees are the best kind of trees :)"
+                },
+                {
+                    src: "images/chargingcat.jpg",
+                    alt: "Cat Meme 15",
+                    name: "Don't forget to charge your cat!"
+                },
+                {
+                    src: "images/herocat.jpg",
+                    alt: "Cat Meme 16",
+                    name: "This cat is a true hero"
+                },
+                {
+                    src: "images/LOAF.webp",
+                    alt: "Cat Meme 17",
+                    name: "He really do be lookin' like a loaf of bread tho"
+                },
+                {
+                    src: "images/mailboxcat.webp",
+                    alt: "Cat Meme 18",
+                    name: "Mailbox cat"
+                },
+                {
+                    src: "images/modelcat.jpg",
+                    alt: "Cat Meme 19",
+                    name: "Model cat"
+                },
+                {
+                    src: "images/monorailcat.jpg",
+                    alt: "Cat Meme 20",
+                    name: "Monorail cat"
+                },
+                {
+                    src: "images/soapcat.jpg",
+                    alt: "Cat Meme 21",
+                    name: "Soap cat"
+                },
+                {
+                    src: "images/yonothelping.jpg",
+                    alt: "Cat Meme 22",
+                    name: "Cats sure are annoying sometimes"
+                },
+                {
+                    src: "images/theritual.jpg",
+                    alt: "Cat Meme 23",
+                    name: "Ah yes, a classic, watching cats look at themselves in the mirror will never not be amusing"
+                },
+                {
+                    src: "images/keyboardcat.webp",
+                    alt: "Cat Meme 24",
+                    name: "RIP Keyboard cat, you absolute legend :("
+                },
+                {
+                    src: "null.png",
+                    alt: "null",
+                    name: ""
+                }, 
+                // Add more image data objects as needed
+            ];
+
+            // Function to load and display images
+        function loadImages() {
+            imagesData.forEach(imageData => {
+                const imgElement = document.createElement("img");
+                imgElement.src = imageData.src;
+                imgElement.classList.add("cat-image");
+                imgElement.alt = imageData.alt;
+                imgElement.style.maxWidth = "1000px"; // Set a max width for consistent sizing
+                imgElement.style.maxHeight = "1000px";
+                imageContainer.appendChild(imgElement);
+
+                    // Create a paragraph for the image name and append it
+                    const nameElement = document.createElement("p");
+                    nameElement.textContent = imageData.name;
+                    imageContainer.appendChild(nameElement);
+                });
+            }
+
+            // Call the function to load images
+            loadImages();
+        });
+    </script>
+</body>
+</html>
